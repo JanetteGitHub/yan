@@ -1,0 +1,82 @@
+﻿@model yan.Common.Models.ServiciosyNegocios
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ServiciosyNegocios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ServiceName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServiceName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adreess)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adreess)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PageContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PageContact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishOn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublishOn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeService)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeService)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImagePath)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ServiId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

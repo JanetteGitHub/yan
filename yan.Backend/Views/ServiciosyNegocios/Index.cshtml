@@ -1,0 +1,75 @@
+﻿@model IEnumerable<yan.Common.Models.ServiciosyNegocios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adreess)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PageContact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublishOn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeService)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adreess)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PageContact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublishOn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeService)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImagePath)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ServiId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ServiId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ServiId })
+        </td>
+    </tr>
+}
+
+</table>
