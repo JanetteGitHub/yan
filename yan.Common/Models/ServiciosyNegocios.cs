@@ -27,5 +27,9 @@ namespace yan.Common.Models
         public string TypeService { get; set; }
         public string ImagePath { get; set; }
 
+        public override string ToString()
+        {
+            return this.Description;
+        }
     }
 }

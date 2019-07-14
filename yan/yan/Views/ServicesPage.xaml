@@ -3,14 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="yan.Infrastructure.Views.ServicesPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
-             >
+             Title="Servicios y Negocios">
     <ContentPage.Content>
         <StackLayout
-            BindingContext="{Binding Services}">
+            BindingContext="{Binding Services}"
+            Padding="5">
             <ListView
-                ItemsSource="{Binding Services}">
-                </ListView>
-           
+                HasUnevenRows="True"
+                IsRefreshing="{Binding IsRefreshing}"
+                IsPullToRefreshEnabled="True"
+                ItemsSource="{Binding Services}"
+                RefreshCommand="{Binding RefreshCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label
+                                    FontAttributes="Bold"
+                                    Grid.Column="0"
+                                    Text="{Binding Description}">
+                                </Label>
+                                <Label
+                                    
+                                    Grid.Column="0"
+                                    HorizontalOptions="End"
+                                    Text="{Binding ServiceName}">
+                                </Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

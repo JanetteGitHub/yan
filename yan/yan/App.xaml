@@ -12,7 +12,7 @@
             <!--Locator-->
             <infra:InstanceLocator x:Key="Locator"/>
             <!--parameters-->
-            
+            <x:String x:Key="UrlAPI">https://yanapi20190713080118.azurewebsites.net</x:String>
 
 
         </ResourceDictionary>
