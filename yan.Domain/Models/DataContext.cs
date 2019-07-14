@@ -9,5 +9,7 @@ namespace yan.Domain.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<yan.Common.Models.ServiciosyNegocios> ServiciosyNegocios { get; set; }
     }
 }
