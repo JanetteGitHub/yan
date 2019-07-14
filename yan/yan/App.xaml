@@ -11,6 +11,8 @@
          
             <!--Locator-->
             <infra:InstanceLocator x:Key="Locator"/>
+            <!--parameters-->
+            
 
 
         </ResourceDictionary>

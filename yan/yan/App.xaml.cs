@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using yan.Infrastructure.Views;
 
 namespace yan
 {
@@ -10,7 +11,7 @@ namespace yan
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new ServicesPage());
         }
 
         protected override void OnStart()

@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Infrastructure\Views\ServicesPage.xaml">
+    <EmbeddedResource Update="Views\ServicesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
